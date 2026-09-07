@@ -1,0 +1,25 @@
+# Core API
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Crypto (UIDAI signature verification)
+cryptography==44.0.0
+
+# Imaging / forensics
+pillow==11.1.0
+numpy==2.2.1
+opencv-python-headless==4.10.0.84
+
+# QR decoding (needs system libzbar: apt-get install libzbar0)
+pyzbar==0.1.9
+
+# OCR (needs system tesseract: apt-get install tesseract-ocr)
+pytesseract==0.3.13
+# Optional heavier fallback, pulls torch. Install only if Tesseract struggles.
+# easyocr==1.7.2
+
+# Face match + liveness. Heavy; install last.
+deepface==0.0.93
+tf-keras==2.18.0
+mediapipe==0.10.20
